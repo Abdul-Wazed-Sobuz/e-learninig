@@ -43,8 +43,8 @@ class StudentAuthController extends Controller
         $student=new Student;
         $student->student_name=$req->fname.' '.$req->lname;
         $student->email=$req->email;
-        $student->account()->email=$req->email;
-        $student->account()->password=$req->pass;
+        // $student->account()->email=$req->email;
+        // $student->account()->password=$req->pass;
         $student->address=$address;
         $student->account_id=$actid->account_id;
         // $account->student()->save($student);
