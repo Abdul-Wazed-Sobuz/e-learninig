@@ -56,7 +56,6 @@ Route::get('/teacher/home',[teacherController::class,'teacherHome'])->name('teac
 
 
 // Coordinator start
-
 Route::get('/Coordinator/register',[coor_controller::class,'fill_register'])->name('fill_register');
 Route::post('/Coordinator/register',[coor_controller::class,'submit_register'])->name('submit_register');
 Route::get('/Coordinator/home',[coor_controller::class,'coor_home'])->name('coor_home');
